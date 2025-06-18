@@ -49,7 +49,7 @@ for (let i:number=accendingArray.length-1;i>0;i--){
         temp=accendingArray[j];
     accendingArray[j]=accendingArray[i];
     accendingArray[i]=temp; 
-    ++j
+    j++
  
     console.log(accendingArray[i]);
 }
@@ -86,3 +86,7 @@ function printAccountName(account:Account){
 
 }
 printAccountName({name:'umer',email:"ali@gmail.com"});
+function heloworld <T>(name:T):void{
+console.log(name);
+}
+heloworld(<Object>{name:"ali",age:3});
