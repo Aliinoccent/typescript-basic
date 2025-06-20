@@ -90,3 +90,17 @@ function heloworld <T>(name:T):void{
 console.log(name);
 }
 heloworld(<Object>{name:"ali",age:3});
+
+
+function data <either> (a:either):either{
+  return a;
+}
+console.log(data('2'));
+console.log(data(2));
+
+interface Users<T,U>{
+  name :T;
+  id:U;
+}
+let newuser : Users<string,number>={name:"ali",id:3}
+console.log(newuser);
